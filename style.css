@@ -33,6 +33,13 @@ section {
     background-image: url(img/bgCOMMENTS.png);
 }
 
+.main-block, .main-block, .skills-block, .works-block, .comments-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
 .main-block {
     flex-direction: column;
     height: 100vh;
