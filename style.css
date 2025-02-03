@@ -17,6 +17,29 @@ section {
     background-image: url(img/bgMAIN.png);
 }
 
+.planet {
+    background: url(img/planet.png);
+    background-repeat: no-repeat;
+    width: 405px;
+    height: 330px;
+    transform: rotate(-176deg);
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+}
+
+.moving-planet {
+    background:
+        url(img/moving-planet.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 230px;
+    transform: rotate(-15deg);
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
 #about {
     background-image: url(img/bgABOUT.png);
 }
@@ -33,7 +56,11 @@ section {
     background-image: url(img/bgCOMMENTS.png);
 }
 
-.main-block, .main-block, .skills-block, .works-block, .comments-block{
+.main-block,
+.main-block,
+.skills-block,
+.works-block,
+.comments-block {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,4 +118,101 @@ section {
 
 .button:hover {
     background: #a0d826;
+}
+
+.main-content {
+    z-index: 2;
+}
+
+.planet {
+    background: url(img/planet.png);
+    background-repeat: no-repeat;
+    width: 405px;
+    height: 330px;
+    transform: rotate(-176deg);
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+}
+
+.moving-planet {
+    background:
+        url(img/moving-planet.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 230px;
+    transform: rotate(-15deg);
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+@keyframes planet-move {
+    form {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(70px);
+    }
+}
+
+.moving-planet {
+    animation: planet-move 2s infinite alternate;
+}
+
+.title {
+    padding-top: 100px;
+    text-align: center;
+    color: #FFF;
+    font-size: 80px;
+    text-shadow:
+        5px 5px 0 #000000;
+}
+
+.about-content{
+    width: 35%;
+    height: 270px;
+    background: #792AFF;
+    padding-left: 40px ;
+    padding-top: 40px;
+    position: relative;
+    display: flex;
+}
+
+.about-title{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 463px;
+    margin-bottom: 20px;
+    font-family: 'Comfortaa';
+}
+
+.about-card{
+    background-image: 
+        url(img/form2.png);
+    background-repeat: 
+                 no-repeat;
+    width: 376px;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    position: relative;
+}
+
+.about-card p{
+    color: #000;
+    font-size: 17px;
+    align-self: start;
+    padding-left: 20px;
+    line-height: 25px;
+    font-family: 'Comfortaa';
+}
+
+.about-card img{
+    padding-bottom: 20px;
 }
