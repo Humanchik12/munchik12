@@ -170,17 +170,17 @@ section {
         5px 5px 0 #000000;
 }
 
-.about-content{
+.about-content {
     width: 35%;
     height: 270px;
     background: #792AFF;
-    padding-left: 40px ;
+    padding-left: 40px;
     padding-top: 40px;
     position: relative;
     display: flex;
 }
 
-.about-title{
+.about-title {
     color: #FFF;
     font-size: 20px;
     font-weight: 700;
@@ -189,11 +189,11 @@ section {
     font-family: 'Comfortaa';
 }
 
-.about-card{
-    background-image: 
+.about-card {
+    background-image:
         url(img/form2.png);
-    background-repeat: 
-                 no-repeat;
+    background-repeat:
+        no-repeat;
     width: 376px;
     height: 346px;
     display: flex;
@@ -204,7 +204,7 @@ section {
     position: relative;
 }
 
-.about-card p{
+.about-card p {
     color: #000;
     font-size: 17px;
     align-self: start;
@@ -213,6 +213,24 @@ section {
     font-family: 'Comfortaa';
 }
 
-.about-card img{
+.about-card img {
     padding-bottom: 20px;
+}
+
+.moving-cloud {
+
+    background: url(img/cloud.png);
+
+    background-repeat: no-repeat;
+
+    width: 180px;
+
+    height: 162px;
+
+    position: absolute;
+
+    bottom: 30px;
+
+    left: 30px;
+
 }
