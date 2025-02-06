@@ -57,7 +57,7 @@ section {
 }
 
 .main-block,
-.main-block,
+.about-block,
 .skills-block,
 .works-block,
 .comments-block {
@@ -234,3 +234,101 @@ section {
     left: 30px;
 
 }
+
+.skills-card {
+    background-image: url(img/form3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin: 20px;
+    padding-left: 10px;
+}
+
+.skills-card p {
+    color: #000;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 500px;
+    font-family: 'Comfortaa';
+}
+
+.moving-planet2 {
+    background: url(img/moving-planet2.png);
+    background-repeat: no-repeat;
+    width: 208px;
+    height: 200px;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+}
+
+.moving-planet,
+.moving-planet2,
+.moving-cloud {
+    animation-name: planet_move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.works-block img {
+    margin: 0 20px;
+    width: 27%;
+    box-shadow:
+        7px 7px 0 #000000;
+}
+
+.comments-block {
+    justify-content: space-evenly;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.comments-card {
+    background-image: url(img/card.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+}
+
+.comment-card h3{
+font-size: 18px;
+font-family: 'comfortaa';
+padding: 10px 20px;
+text-align: center;
+}
+
+footer{
+    background-color: #200153;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+ }
+ 
+ .footer-info p{
+    font-family: 'Comfortaa';
+    padding-bottom: 10px;
+ }
+ 
+ .footer-year p{
+    font-family: 'Comfortaa';
+    letter-spacing: 1.5px;
+ }
+ 
+ .footer-links a{
+    margin-right: 15px;
+ }
