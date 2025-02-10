@@ -3,6 +3,7 @@
 * {
     margin: 0;
     font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
 }
 
 section {
@@ -110,6 +111,8 @@ section {
 .button a {
     font-size: 20px;
     text-decoration: none;
+    color: inherit;
+    font-weight: 700;
 }
 
 .button {
@@ -283,15 +286,8 @@ section {
     box-shadow:
         7px 7px 0 #000000;
 }
-
-.comments-block {
-    justify-content: space-evenly;
-    max-width: 1150px;
-    margin: auto;
-}
-
 .comments-card {
-    background-image: url(img/card.png);
+    background-image: url(img/comment-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -302,33 +298,48 @@ section {
     align-items: center;
     max-width: 200px;
 }
-
-.comment-card h3{
-font-size: 18px;
-font-family: 'comfortaa';
-padding: 10px 20px;
-text-align: center;
+.comments-block {
+    justify-content: space-evenly;
+    max-width: 1150px;
+    margin: auto;
 }
 
-footer{
+
+
+.comment-card h3 {
+    font-size: 18px;
+    font-family: 'Comfortaa';
+    padding: 10px;
+    text-align: center;
+}
+
+
+.comment-card p {
+    font-size: 14px;
+    font-family: 'Comfortaa';
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer {
     background-color: #200153;
     height: 110px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: #FFF;
- }
- 
- .footer-info p{
+}
+
+.footer-info p {
     font-family: 'Comfortaa';
     padding-bottom: 10px;
- }
- 
- .footer-year p{
+}
+
+.footer-year p {
     font-family: 'Comfortaa';
     letter-spacing: 1.5px;
- }
- 
- .footer-links a{
+}
+
+.footer-links a {
     margin-right: 15px;
- }
+}
