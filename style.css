@@ -461,6 +461,19 @@ nav {
 .off-scroll{
     overflow: hidden;
 }
+@media (width < 330px) {
+    .skills-card {
+        & p {
+            color: #000;
+            font-size: 15px;
+            margin-top: 33px;
+            margin-bottom: 15px;
+            text-align: center;
+            max-width: 500px;
+            font-family: 'Comfortaa';
+        }
+    }
+}
 
  @media (max-width: 1000px) {
     .mobile-button {
@@ -559,7 +572,8 @@ nav {
 
     .skills-card .button {
         position: absolute;
-        bottom: 100px;
+        align-items: center;
+        justify-content: center;
     }
 
     .works-block {
@@ -602,21 +616,59 @@ nav {
         background-image: url(img/form3.png);
         background-repeat: no-repeat;
         background-size: contain;
-        height: 450px;
+        height: 350px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 100px;
         margin: 20px;
         padding-left: 10px;
     
         & p {
             color: #000;
-            font-size: 18px;
-            margin-top: 30px;
-            margin-bottom: 30px;
+            font-size: 15px;
+            margin-top: 50px;
+            margin-bottom: 15px;
             text-align: center;
             max-width: 500px;
+            font-family: 'Comfortaa';
+
+        }
+
+    }
+    .main-content {
+        background-image: url(img/form1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 849px;
+        height: 86px;
+        padding-left: 30px;
+    }
+}
+@media (width < 425x) {
+    .skills-card {
+        & p {
+            color: #000;
+            font-size: 15px;
+            margin-top: 34px;
+            margin-bottom: -1px;
+            text-align: center;
+            max-width: 500px;
+            font-family: 'Comfortaa';
+        }
+    }
+}
+
+
+
+@media (width < 770px) {
+    .skills-card {
+        & p {
+            color: #000;
+            font-size: 15px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            text-align: center;
+            max-width: 446px;
             font-family: 'Comfortaa';
         }
     }
