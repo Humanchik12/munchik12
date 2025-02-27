@@ -1,29 +1,25 @@
 let menu = document.querySelector(".fixed-menu");
+let mobileMenu = document.querySelector(".mobile-menu");
+let body = document.querySelector("body");
+
+let classLink = '.main-link';
 
 menu.addEventListener('click', function (event) {
   let clickTarget = event.target;
   let activeBtn = document.querySelector('.active');
 
-  if (clickTarget.classList.contains('nav-link') && clickTarget) {
+  if (clickTarget.classList.contains('nav-link')) {
     clickTarget.classList.add('active');
     activeBtn.classList.remove('active');
+
+    if (!mobileMenu.classList.contains('hide')) {
+      mobileMenu.classList.add('hide')
+      body.classList.remove("off-scroll");
+    }
   }
-  let body = document.querySelector("body");
-let mobileMenu = document.querySelector(".mobile-menu");
-if (!body.classList.contains("off-scroll") &&
-  !mobileMenu.classList.contains('hide')) {
-  body.classList.add("off-scroll");
-}
-else {
-  body.classList.remove("off-scroll");
-}
 });
 
-
-let classLink = '.main-link';
 window.onscroll = function () {
-  console.log(1);
-
   let h = document.documentElement.clientHeight;
   if (window.scrollY >= h * 4) {
     classLink = '.comments-link';
@@ -49,19 +45,8 @@ window.onscroll = function () {
   }
 };
 
-menu.addEventListener('click', function (event) {
-  let clickTarget = event.target;
-  let activeBtn = document.querySelector('.active');
-  if (clickTarget.classList.contains('nav-link')) {
-    clickTarget.classList.add('active');
-    activeBtn.classList.remove('active');
-  }
-    let mobile = document.querySelector('.mobile-menu');
-    if (!mobile.classList.contains('hide')) {
-      mobile.classList.add('hide');
-    }
-
-  
+document.querySelector(".mobile-button").addEventListener('click', function (event) {
+  mobileMenu.classList.toggle('hide')
+  body.classList.toggle("off-scroll");
 });
-
 
